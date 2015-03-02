@@ -9,15 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.stinxge.coursehelper.R;
+
 /**
  * Created by stinxge on 2015/3/2.
  */
-public class FragmentIndex extends Fragment {
+public class CourseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView text = new TextView(this.getActivity());
-        text.setText("Section");
-        text.setGravity(Gravity.CENTER);
-        return text;
+        return inflater.inflate(R.layout.course, container, false);
     }
 }

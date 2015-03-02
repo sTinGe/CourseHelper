@@ -23,7 +23,7 @@ public class LogoActivity extends ActionBarActivity {
         setContentView(R.layout.logo);
 
         AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f, 1.0f);
-        alphaAnimation.setDuration(1000);
+        alphaAnimation.setDuration(2000);
 
         ImageView logo = (ImageView) findViewById(R.id.logo);
         logo.setAnimation(alphaAnimation);
@@ -36,7 +36,11 @@ public class LogoActivity extends ActionBarActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 Intent intent = new Intent(LogoActivity.this, MainActivity.class);
                 startActivity(intent);
                 LogoActivity.this.finish();
