@@ -23,6 +23,7 @@ public class CourseFragment extends Fragment {
         View view = inflater.inflate(R.layout.course, container, false);
         FloatingActionButton button = (FloatingActionButton) view.findViewById(R.id.course_icon);
         button.setIcon(R.drawable.course);
+        button.setStrokeVisible(false);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
