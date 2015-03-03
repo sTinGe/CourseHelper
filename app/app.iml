@@ -93,6 +93,7 @@
     <orderEntry type="library" exported="" name="support-annotations-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="floatingactionbutton-1.8.0" level="project" />
     <orderEntry type="library" exported="" name="material-dialogs-0.6.3.3" level="project" />
+    <orderEntry type="library" exported="" name="android-week-view-1.2.1" level="project" />
   </component>
 </module>
 
