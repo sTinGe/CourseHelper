@@ -25,19 +25,21 @@ public class CourseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View course = inflater.inflate(R.layout.course, container, false);
 
+        final FloatingActionsMenu menu = (FloatingActionsMenu) course.findViewById(R.id.menu);
         final FloatingActionButton action1 = (FloatingActionButton) course.findViewById(R.id.action1);
+        final FloatingActionButton action2 = (FloatingActionButton) course.findViewById(R.id.action2);
         action1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                action1.setTitle("action1 has been clicked!");
+                menu.collapse();
+
             }
         });
-
-        final FloatingActionButton action2 = (FloatingActionButton) course.findViewById(R.id.action2);
         action2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                action2.setTitle("action2 has been clicked!");
+                menu.collapse();
+
             }
         });
 
