@@ -23,6 +23,24 @@ import com.getbase.floatingactionbutton.FloatingActionsMenu;
 public class CourseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.course, container, false);
+        final View course = inflater.inflate(R.layout.course, container, false);
+
+        final FloatingActionButton action1 = (FloatingActionButton) course.findViewById(R.id.action1);
+        action1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                action1.setTitle("action1 has been clicked!");
+            }
+        });
+
+        final FloatingActionButton action2 = (FloatingActionButton) course.findViewById(R.id.action2);
+        action2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                action2.setTitle("action2 has been clicked!");
+            }
+        });
+
+        return course;
     }
 }

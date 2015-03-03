@@ -9,9 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        fab:fab_addButtonColorNormal="@color/white"
-        fab:fab_addButtonColorPressed="@color/white_pressed"
-        fab:fab_addButtonPlusIconColor="@color/half_black"
+        fab:fab_addButtonColorNormal="@color/yellow"
+        fab:fab_addButtonColorPressed="@color/yellow_pressed"
+        fab:fab_addButtonPlusIconColor="@color/white"
         fab:fab_addButtonSize="mini"
         fab:fab_labelStyle="@style/menu_labels_style"
         fab:fab_labelsPosition="left"
@@ -25,17 +25,21 @@
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_title="Add Course"
-            fab:fab_colorPressed="@color/white_pressed" />
+            android:id="@+id/action1"
+            fab:fab_colorNormal="@color/blue"
+            fab:fab_colorPressed="@color/blue_pressed"
+            fab:fab_icon="@drawable/course"
+            fab:fab_title="Add Course" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
+            android:id="@+id/action2"
+            fab:fab_colorNormal="@color/purple"
+            fab:fab_colorPressed="@color/purple_pressed"
             fab:fab_size="mini"
-            fab:fab_title="Add Note"
-            fab:fab_colorPressed="@color/white_pressed" />
+            fab:fab_icon="@drawable/note"
+            fab:fab_title="Add Note" />
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 
