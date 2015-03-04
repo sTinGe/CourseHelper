@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- color for floatingButton -->
     <color name="black_semi_transparent">#B2000000</color>
     <color name="background">#f5f5f5</color>
     <color name="half_black">#808080</color>
@@ -15,4 +16,10 @@
     <color name="yellow_pressed">#fdd835</color>
     <color name="purple">#673ab7</color>
     <color name="purple_pressed">#4527a0</color>
+
+    <!-- color for Week View -->
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
 </resources>
